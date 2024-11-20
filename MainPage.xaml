@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoldovanAlexLab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Image
+                Source="shop_list.jpg" 
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Imagine personalizată despre pasiunea mea" />
+                <Label
+                Text="Bine ai venit la aplicația mea!"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                Text="Aceasta este aplicația mea de .NET MAUI, unde îmi exprim pasiunea pentru dezvoltare software."
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Descriere despre aplicația mea și pasiunea pentru dezvoltare software" />
+                <Button
+                x:Name="CounterBtn"
+                Text="Apasă aici"
+                SemanticProperties.Hint="Numără de câte ori apesi pe buton"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
